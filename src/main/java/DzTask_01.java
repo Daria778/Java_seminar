@@ -19,7 +19,7 @@ public class DzTask_01 {
         return array;
     }
     static int[] pop(int arg, int arg1) {
-        int[] array = new int[1000000000];
+        int[] array = new int[100000];
         int j = 0;
         for (int i = Short.MIN_VALUE; i < arg; i++) {
             if (i % arg1 != 0) {
