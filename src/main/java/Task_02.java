@@ -8,7 +8,10 @@ public class Task_02 {
             String sym = scanner.nextLine();
             System.out.print("Enter the second string: ");
             String sym1 = scanner.nextLine();
-            if (sym.equals(sym1)) {
+            StringBuilder sym2 = new StringBuilder(sym1).reverse();
+            String lol = sym2.toString();
+
+            if (sym.equals(lol)) {
                 System.out.println("Strings are same");
             } else {
                 System.out.println("Strings are different");
