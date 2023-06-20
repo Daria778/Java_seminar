@@ -35,7 +35,6 @@ public class DzTask_02 {
         }
         long start = System.currentTimeMillis();
         s = s.replace("a", "A");
-        System.out.println(s);
         System.out.println("String time = " + (System.currentTimeMillis() - start));
 
         start = System.currentTimeMillis();
@@ -45,7 +44,7 @@ public class DzTask_02 {
         }
         builder1 = lol;
         System.out.println("StringBuilder time = " + (System.currentTimeMillis() - start));
-        System.out.println(builder1);
+
     }
 
 
@@ -55,7 +54,8 @@ public class DzTask_02 {
         lol();
         method();
 
-        String str = ".3 + 1.85";
+        String str =  ".3 + 1.85";
+
 
     }
 
