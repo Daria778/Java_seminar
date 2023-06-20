@@ -17,5 +17,9 @@ public class Task_02 {
                 System.out.println("Strings are different");
             }
 
+
+
+
+        }
+
     }
-}
