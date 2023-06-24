@@ -1,3 +1,5 @@
+import com.sun.jdi.Value;
+
 import java.util.Scanner;
 public class DzTask_02 {
     static void lol() {
@@ -55,6 +57,10 @@ public class DzTask_02 {
         method();
 
         String str =  ".3 + 1.85";
+        String[] n = str.split(" ");
+
+
+
 
 
     }
