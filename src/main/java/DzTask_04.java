@@ -27,17 +27,24 @@ public class DzTask_04 {
         for (int i = 0; i < people.size(); i++) {
             String[] n = people.get(i).split(" ");
         }
-        people.sort(new Comparator<String>() {
-            @Override
-            public int compare(String o1, String o2) {
-                return Integer.parseInt(o1.split(" ")[3]) - Integer.parseInt(o2.split(" ")[3]);
+        System.out.println("Enter 'q' to escape or enter 's' to sort");
+        String v = scanner.nextLine();
+        if (v.equals("q")) {
+            System.out.println();
+        } else if (v.equals("s")) {
+            people.sort(new Comparator<String>() {
+                @Override
+                public int compare(String o1, String o2) {
+                    return Integer.parseInt(o1.split(" ")[3]) - Integer.parseInt(o2.split(" ")[3]);
+                }
+            });
+
+
+            for (int i = 0; i < people.size(); i++) {
+                String[] n = people.get(i).split(" ");
+                System.out.println(n[0] + " " + n[1].charAt(0) + "." + n[2].charAt(0) + "." + n[3] + " " + n[4]);
+
             }
-        });
-
-        for (int i = 0; i < people.size(); i++) {
-            String[] n = people.get(i).split(" ");
-            System.out.println(n[0] + " " + n[1].charAt(0) + "." + n[2].charAt(0) + "." + n[3] + " " + n[4]);
-
         }
     }
 }
