@@ -12,9 +12,7 @@ public class DzTask_05 {
         tel.merge("pop", "9875645", (old, n) -> old + ";" + n);
         System.out.println(tel);
         ArrayList<String> l = new ArrayList<>();
-        for (String i: tel.keySet()) {
-            l.add(i);
-        }
+        l.addAll(tel.keySet());
         l.sort(new Comparator<String>() {
             @Override
             public int compare(String o1, String o2) {
