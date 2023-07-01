@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 public class DzTask_06 {
@@ -17,6 +18,8 @@ public class DzTask_06 {
 
 
         lol.to_String();
+
+
     }
 }
 class HashSet<Integer> {
@@ -41,7 +44,7 @@ class HashSet<Integer> {
         set.clear();
     }
     public void to_String() {
-        System.out.println(set.keySet().toString());
+        System.out.println(set.keySet());
     }
 
 }
